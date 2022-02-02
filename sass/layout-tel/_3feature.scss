@@ -17,7 +17,12 @@
 
   color: var(--title-tex-color--);
 }
-
+.feature__item {
+  margin-bottom: 30px;
+}
+.feature__item:last-child {
+  margin-bottom: 0px;
+}
 .feature__box {
   display: flex;
   justify-content: center;
@@ -46,5 +51,4 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-tex-color--);
-  margin-bottom: 30px;
 }
