@@ -1,63 +1,51 @@
-// .contact-footer {
-//   display: flex;
-// }
-// .contact-footer__logo {
-//   text-decoration: none;
-//   display: block;
-//   width: 145px;
+.contact-footer__logo {
+  display: block;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
 
-//   font-family: Raleway;
-//   font-weight: 700;
-//   font-size: 26px;
-//   line-height: 1.19;
-//   letter-spacing: 0.03em;
-// }
+.footer-nav__logo {
+  margin-bottom: 20px;
+}
+.contact-footer__web {
+  color: var(--accent-tex-color--);
+}
+.contact-footer__studio {
+  color: var(--White-color--);
+  text-decoration: none;
+}
 
-// .contact-footer__web {
-//   color: var(--accent-tex-color--);
-// }
-// .contact-footer__studio {
-//   color: var(--White-color--);
-//   text-decoration: none;
-// }
+.contact-footer__address {
+  display: block;
 
-// .contact-footer__address {
-//   display: flex;
-//   font-family: 'Roboto', sans-serif;
-//   font-style: normal;
-//   font-size: 14px;
-//   line-height: 1.71;
-//   letter-spacing: 0.03em;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  margin-bottom: 8px;
+  color: var(--White-color--);
+}
 
-//   text-decoration: none;
-//   padding-top: 20px;
+.contact-footer__mailto,
+.contact-footer__tel {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 8px;
 
-//   color: var(--White-color--);
-// }
-// .contact-footer__mailto {
-//   display: block;
-//   width: 231px;
-//   padding-top: 9px;
-// }
-// .contact-footer__tel {
-//   display: block;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 
-//   padding-top: 9px;
-// }
+  color: rgba(255, 255, 255, 0.6);
 
-// .contact-footer__mailto,
-// .contact-footer__tel {
-//   text-decoration: none;
-
-//   font-size: 14px;
-//   line-height: 1.71;
-//   letter-spacing: 0.03em;
-
-//   color: rgba(255, 255, 255, 0.6);
-
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-tex-color--);
-//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   }
-// }
+  &:hover,
+  &:focus {
+    color: var(--accent-tex-color--);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
