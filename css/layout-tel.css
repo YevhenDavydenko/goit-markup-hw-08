@@ -459,13 +459,10 @@
 }
 
 .team__card {
-  margin-top: 30px;
-}
-
-.team__card {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-top: 30px;
 }
 
 .partner {
@@ -502,6 +499,14 @@
   margin-top: 16px;
   margin-right: 32px;
   margin-left: 32px;
+}
+
+.network__item {
+  margin-right: 10px;
+}
+
+.network__item:last-child {
+  margin-right: 0px;
 }
 
 .network__link {
@@ -971,7 +976,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 0px;
+    margin-bottom: 9px;
   }
 }
 
