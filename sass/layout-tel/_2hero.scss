@@ -13,6 +13,12 @@
   padding-top: 118px;
   padding-bottom: 118px;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-height: 600px;
+  }
+}
+
 .hero__title {
   font-weight: 900;
   font-size: 26px;

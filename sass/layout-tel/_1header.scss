@@ -20,6 +20,14 @@
   margin-bottom: 26px;
   margin-right: 88px;
 }
+// DEXTOP
+@media screen and (min-width: 1200px) {
+  .page-header__logo {
+    margin-top: 24px;
+    margin-bottom: 25px;
+    margin-right: 93px;
+  }
+}
 .page-header__web {
   color: var(--accent-tex-color--);
 }
@@ -28,6 +36,7 @@
 }
 
 // /* Навигация сайта */
+// TABLET
 
 @media screen and (max-width: 767px) {
   .site-nav {
@@ -39,6 +48,13 @@
     display: flex;
   }
 }
+// DEXTOP
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    display: flex;
+  }
+}
+
 .site-nav li:not(:first-child) {
   margin-left: 50px;
 }
@@ -95,6 +111,23 @@
     margin-left: auto;
   }
 }
+
+// DEXTOP
+@media screen and (min-width: 1200px) {
+  .contact-nav {
+    display: flex;
+    margin-left: auto;
+    padding-top: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-nav__item {
+    margin-left: 50px;
+    margin-bottom: 0px;
+  }
+}
+
 .contact-nav__link {
   display: flex;
   align-items: center;
@@ -106,9 +139,6 @@
 
   text-decoration: none;
   color: var(--primary-tex-color--);
-
-  // padding-top: 21px;
-  // padding-bottom: 21px;
 
   fill: currentColor;
 
