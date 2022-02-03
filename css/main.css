@@ -393,7 +393,7 @@ main {
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .site-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -446,7 +446,7 @@ main {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .contact-nav {
     padding-top: 21px;
     padding-bottom: 21px;
