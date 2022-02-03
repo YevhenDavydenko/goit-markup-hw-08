@@ -1,7 +1,7 @@
 .team {
   background-color: #f5f4fa;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__list {
     display: flex;
     flex-wrap: wrap;
@@ -13,13 +13,13 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__card {
     width: calc((100% - 30px) / 2);
     margin-right: 30px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__card:nth-child(2n) {
     margin-right: 0;
   }
