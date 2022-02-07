@@ -1104,9 +1104,6 @@
 
 @media screen and (max-width: 767px) {
   .filters {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     text-align: center;
@@ -1147,11 +1144,8 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .filters {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1159,13 +1153,13 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .filters > li:not(:last-child) {
     margin-right: 8px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .portfolio__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1178,11 +1172,23 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .portfolio__cards {
     width: calc(100% / 2 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__list {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__cards {
+    width: calc(100% / 3 - 30px);
   }
 }
 
