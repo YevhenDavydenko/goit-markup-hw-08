@@ -355,6 +355,10 @@ main {
   }
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1121,8 +1125,8 @@ main {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
   margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .footer-social__list {
@@ -1231,6 +1235,12 @@ main {
   fill: currentColor;
   width: 24px;
   height: 24px;
+}
+
+@media screen and (max-width: 479px) {
+  .subscribe__input {
+    width: 200px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1582,12 +1592,19 @@ main {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: var(--White-color--);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__btn-close {
@@ -1619,20 +1636,32 @@ main {
 /* Форма */
 /* Имя Телефон Почта Комментарий */
 .modal-form {
-  width: 448px;
+  width: 370px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form {
+    width: 448px;
+  }
 }
 
 .modal-form__title {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-tex-color--);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__title {
+    line-height: 1.15;
+  }
 }
 
 .form__filed {
@@ -1763,10 +1792,18 @@ main {
 }
 
 .modal-agreement__text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-tex-color--);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-agreement__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .modal-agreement__link {
