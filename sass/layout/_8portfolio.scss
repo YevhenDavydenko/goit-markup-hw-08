@@ -3,111 +3,6 @@
   justify-content: center;
   text-align: center;
 }
-
-// TEL
-@media screen and (max-width: 767px) {
-  .filters {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: flex-start;
-  }
-}
-// TABLET
-// @media screen and (min-width: 768px) and (max-width: 1199px) {
-//   .filters {
-//     display: flex;
-//     justify-content: center;
-//     text-align: center;
-//   }
-// }
-
-// .filters > li:not(:first-child) {
-//   margin-left: 8px;
-// }
-// TEL
-@media screen and (max-width: 767px) {
-  .filters > li {
-    margin-right: 8px;
-  }
-}
-// TABLET
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .filters > li:not(:last-child) {
-    margin-right: 8px;
-  }
-}
-// TEL
-@media screen and (max-width: 767px) {
-  .filters > li:nth-last-child(-n + 2) {
-    margin-top: 15px;
-  }
-}
-
-.filters__btn {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  border-radius: 4px;
-  border: inherit;
-
-  padding: 6px 22px;
-  &:hover,
-  &:focus {
-    color: var(--White-color--);
-    background-color: var(--accent-tex-color--);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-// Список работ
-.portfolio__list {
-  display: flex;
-  flex-direction: column;
-  // margin-top: 50px;
-  margin-top: 40px;
-  // flex-wrap: wrap;
-  // margin-left: -30px;
-  // margin-bottom: -30px;
-}
-
-// .portfolio__cards {
-//   width: calc(100% / 3 - 30px);
-//   margin-left: 30px;
-//   margin-bottom: 30px;
-
-//   &:hover,
-//   &:focus {
-//     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-//       1px 4px 6px rgba(0, 0, 0, 0.16);
-//     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   }
-// }
-// TEL
-@media screen and (max-width: 767px) {
-  .portfolio__cards &:hover,
-  &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-// TEL
-@media screen and (max-width: 767px) {
-  .portfolio__cards:not(:first-child) {
-    margin-top: 30px;
-  }
-}
-
 .portfolio__cards:hover .portfolio__text,
 .portfolio__cards:focus .portfolio__text {
   transform: translateY(0%);
@@ -164,3 +59,134 @@
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
+.filters__btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  border-radius: 4px;
+  border: inherit;
+
+  padding: 6px 22px;
+  &:hover,
+  &:focus {
+    color: var(--White-color--);
+    background-color: var(--accent-tex-color--);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.portfolio__cards {
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+// TEL
+@media screen and (max-width: 767px) {
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: flex-start;
+  }
+}
+// TEL
+@media screen and (max-width: 767px) {
+  .filters > li {
+    margin-right: 8px;
+  }
+}
+
+// TEL
+@media screen and (max-width: 767px) {
+  .filters > li:nth-last-child(-n + 2) {
+    margin-top: 15px;
+  }
+}
+
+// TEL
+@media screen and (max-width: 767px) {
+  .portfolio__cards:not(:first-child) {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+}
+
+// .filters > li:not(:first-child) {
+//   margin-left: 8px;
+// }
+
+// Список работ
+
+// TEL
+
+// TABLET
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .filters {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+// TABLET
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .filters > li:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+// TABLET
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__list {
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+}
+// TABLET
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__cards {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+}
+// .portfolio__list {
+//   // margin-top: 50px;
+
+//   // flex-wrap: wrap;
+//   // margin-left: -30px;
+//   // margin-bottom: -30px;
+// }
+
+// .portfolio__cards {
+//   width: calc(100% / 3 - 30px);
+//   margin-left: 30px;
+//   margin-bottom: 30px;
+
+//   &:hover,
+//   &:focus {
+//     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+//       1px 4px 6px rgba(0, 0, 0, 0.16);
+//     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+// }
