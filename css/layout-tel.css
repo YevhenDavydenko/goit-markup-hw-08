@@ -169,7 +169,7 @@
 .menu-open-btn__icon {
   width: 40px;
   height: 40px;
-  padding: 11px;
+  padding: 8px;
   fill: var(--primary-tex-color--);
 }
 
@@ -263,7 +263,7 @@
 .menu-close-btn__icon {
   width: 40px;
   height: 40px;
-  padding: 11px;
+  padding: 8px;
   fill: var(--primary-tex-color--);
 }
 

@@ -45,9 +45,58 @@
               </a>
             </li>
           </ul>
-      </div>
-    </div>
-  </header>
+          <!-- Мобильное меню-->
+          <button class="menu-open-btn" type="button" data-menu-open>
+            <svg class="menu-open-btn__icon">
+              <use href="./images/icons.svg#mobile-open"></use>
+            </svg>
+          </button>
+          <div class="mob-menu is-hidden" data-menu>
+            <div class="mob-menu container">
+              <div class="mob-menu-top">
+                <button class="menu-close-btn" type="button" data-menu-close>
+                  <svg class="menu-close-btn__icon">
+                    <use href="./images/icons.svg#mobile-close"></use>
+                  </svg>
+                </button>
+          
+                <ul class="mob-nav">
+                  <li class="mob-menu__studio"><a class="mob-menu__link current" href="./index.html">Студия</a></li>
+                  <li class="mob-menu__portfolio"><a class="mob-menu__link" href="./portfolio.html">Портфолио</a></li>
+                  <li class="mob-menu__contact"><a class="mob-menu__link" href="">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="mob-menu-bottom">
+                <ul class="mob-contact">
+                  <li class="mob-contact__item"><a class="mob-contact__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                  </li>
+                  <li class="contact-nav__item"><a class="mail-contact__link"
+                      href="mailto:info@devstudio.com">info@devstudio.com</a>
+                  </li>
+                </ul>
+          
+                <ul class="mob-cocial">
+                  <li class="mob-cocial__item">
+                    <a class="mob-cocial__link" href="">Instagram</a>
+                  </li>
+                  <li class="mob-cocial__item">
+                    <a class="mob-cocial__link" href="">Twitter</a>
+                  </li>
+                  <li class="mob-cocial__item">
+                    <a class="mob-cocial__link" href="">Facebook</a>
+                  </li>
+                  <li class="mob-cocial__item">
+                    <a class="mob-cocial__link" href="">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          </div>
+          
+          </div>
+          </div>
+          </header>
  
 <!--Уникальный контент-->
 <!--Страница Портфолио-->
@@ -234,7 +283,7 @@
     </form>
   </div>
 </footer>
-
+<script src="./js/mobile-menu.js"></script>
 
 </body>
 
