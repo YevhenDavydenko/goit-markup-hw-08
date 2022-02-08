@@ -159,3 +159,134 @@
 .contact-nav__item:last-child {
   margin-bottom: 0;
 }
+
+// Мобильное меню
+@media screen and (max-width: 767px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
+.mob-menu {
+  position: fixed;
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+
+  background-color: var(--White-color--);
+  width: 100vw;
+  height: auto;
+  padding-bottom: 48px;
+  padding-left: 40px;
+
+  top: 0;
+  left: 0;
+  border: solid 1px red;
+}
+.mob-menu__link {
+  display: block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+
+  text-decoration: none;
+  color: var(--title-tex-color--);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-nav > li:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-contact__link {
+  display: block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  text-decoration: none;
+
+  margin-bottom: 32px;
+}
+.mail-contact__link {
+  display: block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+
+  margin-bottom: 64px;
+}
+
+.mob-cocial__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  text-decoration: none;
+
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+.menu-close-btn {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+
+  background-color: var(--White-color--);
+
+  border: none;
+}
+.menu-close-btn__icon {
+  width: 40px;
+  height: 40px;
+  padding: 11px;
+  fill: var(--primary-tex-color--);
+}
+.mob-cocial {
+  display: flex;
+}
+
+.mob-menu-bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+@media screen and (min-width: 768px) {
+  .mob-menu .container {
+    display: none;
+  }
+}
+.mob-menu .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.mob-cocial__item:not(:last-child)::after {
+  content: '';
+  margin-right: 10px;
+  padding-left: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-open-btn__icon {
+  width: 40px;
+  height: 40px;
+  padding: 11px;
+  fill: var(--primary-tex-color--);
+}
