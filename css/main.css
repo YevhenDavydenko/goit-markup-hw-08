@@ -1227,12 +1227,20 @@ main {
   }
 }
 
-.team-list__card {
-  max-width: 450px;
-}
-
 .team-list__image {
   width: 450px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list__image {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list__image {
+    width: 270px;
+  }
 }
 
 .clients {
