@@ -860,6 +860,14 @@
   }
 }
 
+.team-list__card {
+  max-width: 450px;
+}
+
+.team-list__image {
+  width: 450px;
+}
+
 .clients {
   display: -webkit-box;
   display: -ms-flexbox;
